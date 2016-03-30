@@ -37,14 +37,14 @@ Returned String can be used in a simple way in your HTML document settting a siz
 
 ##Example
 
-matrix = [
-    ['#fff', '#fff', '#fff'],
-    ['#000', '#000', '#000'],
-    ['#fff', '#fff', '#fff'],
-    ['#000', '#000', '#000']
-  ]
+    matrix = [
+        ['#fff', '#fff', '#fff'],
+        ['#000', '#000', '#000'],
+        ['#fff', '#fff', '#fff'],
+        ['#000', '#000', '#000']
+      ]
 
-matrix_string = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
+    matrix_string = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
 
 ## Contributing
 
