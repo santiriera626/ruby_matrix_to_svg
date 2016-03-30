@@ -25,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-Create a svg image saved on the file system.
+Create a svg matrix string from your matrix.
   
   svg_matrix = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
   
