@@ -27,9 +27,9 @@ Or install it yourself as:
 
 Create a svg matrix string from your matrix filled with colors.
   
-svg_matrix = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
+    svg_matrix = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
   
-*where matrix is the Array of columns and rows filled with colours.
+  *where matrix is the Array of columns and rows filled with colours.
 
 Returned String can be used in a simple way in your HTML document settting a size for your image
     
