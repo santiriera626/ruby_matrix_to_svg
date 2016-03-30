@@ -1,5 +1,10 @@
 # RubyMatrixToSvg
 
+[![Build Status](https://travis-ci.org/santiriera626/ruby_matrix_to_svg.svg?branch=master)](https://travis-ci.org/santiriera626/ruby_matrix_to_svg)
+[![Coverage Status](https://coveralls.io/repos/github/santiriera626/ruby_matrix_to_svg/badge.svg?branch=master)](https://coveralls.io/github/santiriera626/ruby_matrix_to_svg?branch=master)
+[![Code Climate](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg/badges/gpa.svg)](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg)
+[![security](https://hakiri.io/github/santiriera626/ruby_matrix_to_svg/master.svg)](https://hakiri.io/github/santiriera626/ruby_matrix_to_svg/master)
+
 RubyMatrixToSvg is a pure Ruby library without any dependencies that allows you to create a svg string from your matrix.
 
 ## Installation
@@ -20,7 +25,7 @@ Or install it yourself as:
 
 ## Usage
 
-Create a random svg image saved on the file system.
+Create a svg image saved on the file system.
   
   svg_matrix = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
   
