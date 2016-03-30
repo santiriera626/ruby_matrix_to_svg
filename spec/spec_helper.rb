@@ -1,3 +1,5 @@
+require 'coveralls'
+Coveralls.wear!
 require 'ruby_matrix_to_svg'
 
 RSpec.configure do |config|
