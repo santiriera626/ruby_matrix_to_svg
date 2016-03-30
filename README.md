@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg/badges/gpa.svg)](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg)
 [![security](https://hakiri.io/github/santiriera626/ruby_matrix_to_svg/master.svg)](https://hakiri.io/github/santiriera626/ruby_matrix_to_svg/master)
 
-RubyMatrixToSvg is a pure Ruby library without any dependencies that allows you to create a svg string from your matrix.
+RubyMatrixToSvg is a pure Ruby library without any dependencies that allows you to create a svg string from a matrix of colors that you've defined.
 
 ## Installation
 
@@ -25,15 +25,26 @@ Or install it yourself as:
 
 ## Usage
 
-Create a svg matrix string from your matrix.
+Create a svg matrix string from your matrix filled with colors.
   
   svg_matrix = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
   
-  *where matrix is the Array of columns and rows.
+  *where matrix is the Array of columns and rows filled with colours.
 
 Returned String can be used in a simple way in your HTML document settting a size for your image
     
     <img src="data:image/svg+xml;utf8, <%= raw(svg_matrix) %>" width="200px">
+
+##Example
+
+  matrix = [
+      ['#fff', '#fff', '#fff'],
+      ['#000', '#000', '#000'],
+      ['#fff', '#fff', '#fff'],
+      ['#000', '#000', '#000']
+    ]
+
+  matrix_string = RubyMatrixToSvg.matrix_to_svg("ruby_matrix_title", matrix)
 
 ## Contributing
 
