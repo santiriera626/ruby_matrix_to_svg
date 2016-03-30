@@ -1,7 +1,5 @@
 # RubyMatrixToSvg
 
-# RubyMatrixToSvg
-
 [![Build Status](https://travis-ci.org/santiriera626/ruby_matrix_to_svg.svg?branch=master)](https://travis-ci.org/santiriera626/ruby_matrix_to_svg)
 [![Coverage Status](https://coveralls.io/repos/github/santiriera626/ruby_matrix_to_svg/badge.svg?branch=master)](https://coveralls.io/github/santiriera626/ruby_matrix_to_svg?branch=master)
 [![Code Climate](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg/badges/gpa.svg)](https://codeclimate.com/github/santiriera626/ruby_matrix_to_svg)
@@ -39,7 +37,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/ruby_matrix_to_svg/fork )
+1. Fork it ( https://github.com/santiriera626/ruby_matrix_to_svg/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
