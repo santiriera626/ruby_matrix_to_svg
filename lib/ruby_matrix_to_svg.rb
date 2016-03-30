@@ -13,9 +13,15 @@ module RubyMatrixToSvg
 
   def self.matrix_to_svg title, matrix
 
+    # test if params are correct
+    raise "title is invalid" if title == nil || title == ''
+    raise "matrix is invalid, must be a matrix (array of arrays) of colors" if matrix.class != Array || matrix[0].class != Array
+    
     # open svg tag
-    size = matrix.length
-    svg = "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='#{size}' height='#{size}'>"
+    num_rows = matrix.length
+    num_cols = matrix[0].length
+
+    svg = "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='#{num_cols}' height='#{num_rows}'>"
 
     # set title
     svg << "<title>#{title}</title>" 
@@ -23,11 +29,11 @@ module RubyMatrixToSvg
     # background with first color
     svg << "<rect width='100%' height='100%' x='0' y='0' fill='#{matrix[0][0]}' stroke='none' shape-rendering='crispEdges'/>"
 
-    size.times do |col|
-      size.times do |row|
+    num_rows.times do |row|
+      num_cols.times do |col|
         # draw rect if its color its different than background color
-        if matrix[col][row] != matrix[0][0]
-          svg << "<rect fill='#{matrix[col][row]}' stroke='none' fill-rule='nonzero' x='#{col}' y='#{row}' width='1' height='1' shape-rendering='crispEdges' />"
+        if matrix[row][col] != matrix[0][0]
+          svg << "<rect fill='#{matrix[row][col]}' stroke='none' fill-rule='nonzero' x='#{col}' y='#{row}' width='1' height='1' shape-rendering='crispEdges' />"
         end
       end
     end 
