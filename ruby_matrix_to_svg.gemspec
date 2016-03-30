@@ -9,9 +9,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["santiriera626" , "camumino", "franx0"]
   spec.email         = ["santiriera626@gmail.com", "camumino@gmail.com", "francisco.moya.martinez@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Gem to create a svg string from a matrix of colors.}
+  spec.description   =  <<-EOT
+    RubyMatrixToSvg is a pure Ruby library without any dependencies that allows you to create a svg string from a matrix of colors that you've defined
+  EOT
+  spec.homepage      = "https://github.com/santiriera626/ruby_matrix_to_svg"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
